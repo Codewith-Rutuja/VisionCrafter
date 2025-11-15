@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VisionCrafter</title>
+  <link rel="stylesheet" href="image.css" />
+</head>
+<body>
+
+  <div class="particles"></div>
+
+  <div class="container">
+
+    <header>
+      <h1 class="title">VisionCrafter</h1>
+      <p class="tagline">Generate visuals from your imagination</p>
+    </header>
+
+    <form id="promptForm">
+      <input type="text" id="promptInput" placeholder="Describe an image..." required />
+      <button type="submit">Generate</button>
+    </form>
+
+    <div class="loader" id="loader">
+      <div class="loading-bar"></div>
+    </div>
+
+    <div class="image-section">
+      <img id="generatedImage" src="" alt="Generated result" />
+      <a id="downloadBtn" href="#" download="visioncrafter-image.jpg">Download Image</a>
+    </div>
+
+    <h2 class="history-title">Recent Renders</h2>
+    <div class="history-container" id="historyContainer"></div>
+
+  </div>
+
+  <script src="image.js"></script>
+</body>
+</html>
